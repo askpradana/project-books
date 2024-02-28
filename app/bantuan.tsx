@@ -10,6 +10,7 @@ interface BooksModel {
 
 export default function Bantuan() {
 	const [booklist, setBookList] = useState<BooksModel[]>([]);
+	const [error,setError]=useState(Boolean);
 
 	useEffect(() => {
 		GetAllBooks()
@@ -17,9 +18,12 @@ export default function Bantuan() {
 				setBookList(data);
 			})
 			.catch((error) => {
+				setError(true)
 				console.error("Error fetching data:", error);
 			});
 	}, []);
+
+	if(error) return <p>Ada masalah saat load data ke database</p>
 
 	return (
 		<main>
