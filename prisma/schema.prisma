@@ -7,8 +7,17 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model book_list {
-  booksid Int    @id @default(autoincrement())
-  title   String @db.VarChar(255)
-  author  String @db.VarChar(255)
+model buku {
+  booksid Int     @id @default(autoincrement())
+  title   String? @db.VarChar(255)
+  author  String? @db.VarChar(255)
+}
+
+model requestbooks {
+  requestid     Int     @id @default(autoincrement())
+  title         String  @db.VarChar(255)
+  author        String? @db.VarChar(255)
+  publishedyear String? @db.VarChar(255)
+  publishername String? @db.VarChar(255)
+  isfullfilled  Boolean @default(false)
 }
