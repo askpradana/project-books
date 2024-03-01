@@ -74,3 +74,38 @@
     @apply bg-background text-foreground;
   }
 }
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+/* Paragraph Tags */
+p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Anchor Tags */
+a {
+  color: slateblue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li{
+  list-style: url('../public/list-style.svg');
+}
