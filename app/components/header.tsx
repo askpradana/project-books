@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import booksImage from "@/public/books-bg.png";
+import Link from "next/link";
 
 export default function Header() {
 	return (
@@ -12,8 +13,12 @@ export default function Header() {
 						<p className="text-md">Some tagline to attract your attention.</p>
 					</div>
 					<div className="flex flex-row gap-4">
-						<Button>Read a Books</Button>
-						<Button variant="outline">Ask for title</Button>
+						<Button>
+							<Link href="/books">Read a Books</Link>
+						</Button>
+						<Button variant="outline">
+							<Link href="/ask-for-a-book-title">Ask for title</Link>
+						</Button>
 					</div>
 					<div className="absolute bottom-1/2 transform translate-y-1/2 ">
 						<Image

@@ -2,7 +2,7 @@ import { PrismaClient } from "@prisma/client";
 
 export async function GET() {
 	const prisma = new PrismaClient();
-	const booklist = await prisma.book_list.findMany();
+	const booklist = await prisma.buku.findMany()
 
 	return Response.json({ booklist });
 }

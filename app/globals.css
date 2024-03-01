@@ -106,12 +106,12 @@ p {
 
 /* Anchor Tags */
 a {
-	color: slateblue;
+	/* color: slateblue; */
 	text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 li {
