@@ -8,9 +8,10 @@ datasource db {
 }
 
 model buku {
-  booksid Int     @id @default(autoincrement())
-  title   String? @db.VarChar(255)
-  author  String? @db.VarChar(255)
+  booksid    Int     @id @default(autoincrement())
+  title      String? @db.VarChar(255)
+  author     String? @db.VarChar(255)
+  coverbooks String  @db.VarChar(255)
 }
 
 model requestbooks {
