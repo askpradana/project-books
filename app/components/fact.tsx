@@ -1,7 +1,7 @@
 export default function Fact() {
 	return (
-		<div className="flex flex-row justify-center items-end">
-			<div className="bg-slate-200 flex flex-row p-12 items-end">
+		<div className="flex flex-row justify-center items-end bg-slate-200">
+			<div className=" flex flex-row p-12 items-end">
 				<blockquote className="flex flex-row items-end pl-6 border-l-2 border-gray-950 italic pt-4">
 					<div>
 						<strong className="pr-1">Did you know?</strong> watching a short

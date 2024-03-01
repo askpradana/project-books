@@ -9,7 +9,7 @@ export default function Header() {
 				<div className="flex flex-col items-center gap-4 mt-24">
 					<div className="flex flex-col items-center text-white">
 						<h1 className="text-3xl font-bold">Expand your books collection</h1>
-						<h1 className="text-md">Some tagline to attract your attention.</h1>
+						<p className="text-md">Some tagline to attract your attention.</p>
 					</div>
 					<div className="flex flex-row gap-4">
 						<Button>Read a Books</Button>
